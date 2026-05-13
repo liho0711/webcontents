@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>z-index 프로퍼티</title>
+        <style>
+            div{
+                position: absolute;
+            }img{
+                position: absolute;
+            }#spadeA{
+                z-index: -3;
+                left: 10px;
+                top: 20px;
+            }#spade2{
+                z-index: 2;
+                left: 40px;
+                top: 30px;
+            }#spade3{
+                z-index: 3;
+                left: 80px;
+                top: 40px;
+            }#spade7{
+                z-index: 7;
+                left: 120px;
+                top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>z-index 프로퍼티</h3>
+        <hr>
+        <div>
+            <img id="spadeA" src="https://e7.pngegg.com/pngimages/902/280/png-clipart-ace-of-spades-playing-card-ace-of-hearts-spades-game-angle-thumbnail.png" width="100" height="140" alt="스페이드A">
+            <img id="spade2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Playing_card_spade_2.svg/960px-Playing_card_spade_2.svg.png" width="100" height="140" alt="스페이드2">
+            <img id="spade3" src="https://us.123rf.com/450wm/pandawild/pandawild1509/pandawild150900136/45128584-poker-playing-card-3-spade.jpg" width="100" height="140" alt="스페이드3">
+            <img id="spade7" src="https://previews.123rf.com/images/pandawild/pandawild1509/pandawild150900132/45128580-poker-playing-card-7-spade.jpg" width="100" height="140" alt="스페이드7">
+        </div>
+    </body>
+</html>
