@@ -4,19 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>설문지</title>
+        <style>
+             body{
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+                background-color: aliceblue;
+            }h1{
+                color: darkred;
+                text-align: center;
+            }p{
+                font-size: 1em;
+            }hr{
+                border-bottom: 1px solid black;
+            }div{
+                margin: 20px 10px 20px 10px;
+                padding: 10px;
+                background-color: pink;
+            }.footer{
+                background-color: orange;
+                padding: 0px 20px 0px 20px;
+                border-radius: 10px;
+            }
+        </style>
     </head>
     <body>
-        <h2>설문지</h2>
+        <h1>설문지</h1>
         <p>어떤 느낌을 받았는지, 혹시 친해지고 싶어졌다면 참여 부탁드립니다.</p>
         <hr>
-        학년 : <input type="radio" name="grade" value="1">1학년 <input type="radio" name="grade" value="2">2학년 <input type="radio" name="grade" value="3">3학년<br>
-        성별 : <input type="radio" name="sexual" value="m">남 <input type="radio" name="sexual" value="f">여<br>
-        알게된 계기 : <input type="text" list="how"><br>
-        <datalist id="how">
-            <option value="친구 소개"></option>
-            <option value="인터넷 등 매체"></option>
-            <option value="과제를 통해"></option>
-        </datalist>
-        남기고 싶은 말 : <textarea cols="20" rows="5">이곳에 작성해주세요.</textarea>
+        <div>
+            학년 : <input type="radio" name="grade" value="1">1학년 <input type="radio" name="grade" value="2">2학년 <input type="radio" name="grade" value="3">3학년<br><br>
+            성별 : <input type="radio" name="sexual" value="m">남 <input type="radio" name="sexual" value="f">여<br><br>
+            알게된 계기 : <input type="text" list="how"><br><br>
+            <datalist id="how">
+                <option value="친구 소개"></option>
+                <option value="인터넷 등 매체"></option>
+                <option value="과제를 통해"></option>
+            </datalist>
+            남기고 싶은 말 : <textarea cols="20" rows="5">이곳에 작성해주세요.</textarea>
+        </div>
+        <p class="footer">Copyright 2026 by MYONGJI COLLEGE</p>
     </body>
 </html>
