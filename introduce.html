@@ -8,10 +8,30 @@
             body{
                 font-weight: bold;
                 font-family: 'Times New Roman', Times, serif;
+                background-color: aliceblue;
+            }
+            h1{
+                color: darkred;
+                text-align: center;
+            }
+            header{
+                border-bottom: 1px solid black;
             }
             h2{
                 background-color: #DEDEDE;
                 padding: 0px 0px 0px 10px;
+                color: blue;
+                text-shadow: 2px 1px;
+            }
+            nav ul{
+                border: 1px dotted black;
+            }
+            a{
+                text-decoration: none;
+            }
+            .timetable{
+                width: 800px;
+                height: 400px;
             }
             img{
                 width: 200px;
@@ -20,12 +40,27 @@
             td{
                 text-align: center;
             }
+            .time{
+                background-color: yellow;
+            }.sw{
+                background-color: lightcoral;
+            }.c{
+                background-color: lightblue;
+            }.html{
+                background-color: lightgreen;
+            }.com{
+                background-color: lightyellow;
+            }
+            footer{
+                background-color: orange;
+                padding: 0px 20px 0px 20px;
+                border-radius: 10px;
+            }
         </style>
     </head>
     <body>
         <header>
-            <h2>간단한 자기 소개</h2>
-            <hr>
+            <h1>About Me</h1>
             <p>안녕하십니까, 저는 이번 2026년 명지전문대에 입학하게 된 고현민이라고 합니다.<br>
                 컴퓨터에 관심이 있었기에, 컴퓨터공학과에 들어오게 되었습니다.<br>
                 하단의 목차와 함께, 저에 대한 것을 설명하겠습니다.<br></p>
@@ -103,73 +138,65 @@
         <aside>
             <h2>시간표 ( 2026년 1학기 )</h2>
             <hr>
-            <table border="1">
+            <table border="1" class="timetable">
                 <caption><a href="https://everytime.kr/@jKOHhKK8fWILtbXydR6d">시간표</a></caption>
                 <thead>
                     <tr>
-                        <td></td>
-                        <td>월</td>
-                        <td>화</td>
-                        <td>수</td>
-                        <td>목</td>
-                        <td>금</td>
+                        <th>구분</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>10:00</td>
+                        <td class="time">10:00</td>
                         <td></td>
-                        <td>프로그래밍 언어실습</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>11:00</td>
-                        <td></td>
-                        <td>프로그래밍 언어실습</td>
+                        <td rowspan="3" class="c">프로그래밍<br>언어실습</td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>12:00</td>
+                        <td class="time">11:00</td>
                         <td></td>
-                        <td>프로그래밍 언어실습</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="time">12:00</td>
+                        <td></td>
                         <td></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>1:00</td>
+                        <td class="time">1:00</td>
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>컴퓨터과학개론</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>2:00</td>
-                        <td>SW개발문제해결능력</td>
-                        <td></td>
-                        <td>인터넷콘텐츠</td>
-                        <td>컴퓨터과학개론</td>
+                        <td rowspan="4" class="com">컴퓨터<br>과학개론</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>3:00</td>
-                        <td>SW개발문제해결능력</td>
+                        <td class="time">2:00</td>
+                        <td rowspan="2" class="sw">SW개발<br>문제해결능력</td>
                         <td></td>
-                        <td>인터넷콘텐츠</td>
-                        <td>컴퓨터과학개론</td>
+                        <td rowspan="3" class="html">인터넷<br>콘텐츠</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>4:00</td>
+                        <td class="time">3:00</td>
                         <td></td>
                         <td></td>
-                        <td>인터넷콘텐츠</td>
-                        <td>컴퓨터과학개론</td>
+                    </tr>
+                    <tr>
+                        <td class="time">4:00</td>
+                        <td></td>
+                        <td></td>
                         <td></td>
                     </tr>
                 </tbody>
